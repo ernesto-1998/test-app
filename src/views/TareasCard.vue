@@ -6,7 +6,8 @@
                     <button @click="agregarTarea" class="first-button"> + </button>
                 </div>
                 
-                <input type="text" class="main-input" v-model="texto"> 
+                <input type="text" class="main-input" v-model="texto" 
+                placeholder="Introduzca la tarea"> 
             </div>
                     
         </div>
