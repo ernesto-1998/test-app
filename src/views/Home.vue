@@ -21,9 +21,13 @@
           </div>
         </div>
         <h2> Más Populares </h2>
-        <div class="top-content">
-          <TopProducts/>
-        </div>       
+        <div class="scroll-menu">
+          <div class="scroll-content">
+            <!-- <div class="top-products"> -->
+              <TopProducts/>
+            <!-- </div> -->
+          </div>
+        </div>      
     </div>
 </template>
 

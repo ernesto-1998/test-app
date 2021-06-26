@@ -1,5 +1,5 @@
 <template>
-  <div class="top-products">
+  <div class="top-products" :key="i" v-for="(item, i) in 10">
     <div class="top-products-img">
       <img width="100px" src="https://www.vips.com.mx/img/2019/platillosdic/malteada-cookies-cream.png" alt="" />
     </div>
@@ -25,10 +25,11 @@ export default {
 <style lang="less">
 
 .top-products {
-  max-width: 150px;
+  min-width: 150px;
   position: relative;
   padding: 10px;
   border-radius: 10px;
+  margin-left: 10px;
 
     .top-products-img{
         img{
