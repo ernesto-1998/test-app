@@ -6,16 +6,16 @@
       <div class="navbar-content">
 
         <router-link to="/">
-          <i class='bx bx-home-smile'></i>
+          <i class='bx bx-home-smile bx-sm'></i>
         </router-link>
         <router-link to="/Card">
-          <i class='bx bx-task' ></i>
+          <i class='bx bx-task bx-sm' ></i>
         </router-link>
         <router-link to="/Contact">
-          <i class='bx bxs-contact' ></i>
+          <i class='bx bxs-contact bx-sm' ></i>
         </router-link>
         <router-link to="/Redes">
-          <i class='bx bxl-facebook-square' ></i>
+          <i class='bx bxl-facebook-square bx-sm' ></i>
         </router-link>
 
       </div>
@@ -48,7 +48,7 @@ export default {
       a{
         color: grey;
         &.router-link-exact-active {
-          color: red;
+          color: rgba(255, 131, 62);
         }
       }
     }

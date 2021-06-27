@@ -16,16 +16,16 @@
         <div class="scroll-menu">
           <div class="scroll-content">
             <div class="avatar" v-for="(item, i) in 7" :key="i">
-              <i class='bx bxs-pizza'></i>
+              <i class='bx bxs-pizza bx-sm'></i>
             </div>
           </div>
         </div>
         <h2> Más Populares </h2>
         <div class="scroll-menu">
           <div class="scroll-content">
-            <!-- <div class="top-products"> -->
+
               <TopProducts/>
-            <!-- </div> -->
+
           </div>
         </div>      
     </div>
@@ -54,6 +54,12 @@ export default {
   .home {
     margin: 20px;
 
+    .scroll-menu-top {
+      .scroll-content-top {
+        display: flex;
+      }
+    }
+
     .scroll-menu{
       margin-top: 10px;
 
@@ -65,7 +71,7 @@ export default {
           background-color: rgb(240, 240, 240);
           padding: 20px;
           border-radius: 10px;
-          margin: 5px;
+          margin: 2px;
 
           i{
             color: rgb(255, 172, 17);
