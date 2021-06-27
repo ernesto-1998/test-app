@@ -1,15 +1,15 @@
 <template>
-  <div class="top-products" :key="i" v-for="(item, i) in 10">
+  <div class="top-products" :key="i" v-for="(item, i) in productosPopulares">
     <div class="top-products-img">
-      <img width="100px" src="https://www.vips.com.mx/img/2019/platillosdic/malteada-cookies-cream.png" alt="" />
+      <img width="100px" :src="item.imagen" />
     </div>
 
     <div class="top-products-text">
       <div class="top-products-title">
-        Malteada de Maracuya
+        {{ item.nombre }}
       </div>
       <div class="top-products-price">
-        $3.50
+        {{ item.precio }}
       </div>
     </div>
     <i class="bx bx-plus-medical"></i>
@@ -19,6 +19,17 @@
 <script>
 export default {
   name: "TopProducts",
+
+  data() {
+    return {
+        productosPopulares:[
+        {"nombre": "Malteada de Maracuya", "precio": "$3.50", "imagen": "https://www.vips.com.mx/img/2019/platillosdic/malteada-cookies-cream.png" },
+        {"nombre": "Papas locas", "precio": "$1.50", "imagen": "https://pngimg.com/uploads/fries/fries_PNG97888.png" },
+        {"nombre": "Ensala Caesar", "precio": "$6.50", "imagen": "https://i.pinimg.com/originals/66/1e/e6/661ee628d8384abb2367b9d256557a17.png" }
+    ],
+    }
+  },
+
 };
 </script>
 
@@ -36,7 +47,6 @@ export default {
             width: 100%;
         }
     }
-
     .top-products-text{
         margin-top: 10px;
 
